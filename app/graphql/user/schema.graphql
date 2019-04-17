@@ -1,0 +1,29 @@
+# 用户
+type User {
+    # 用户ID
+    id: ID
+    # 昵称
+    name: String
+    # 手机号
+    tel: String
+    # 邮箱
+    email: String
+}
+type UserEdge {
+    cursor: Cursor!,
+    node: User
+}
+type UserConnection {
+    edges: [UserEdge],
+    pageInfo: PageInfo!,
+    count: Int
+}
+
+# 银行卡
+type BankCard {
+    id: ID
+    # 银行名称
+    name: String
+    # 银行卡号
+    number: String
+}

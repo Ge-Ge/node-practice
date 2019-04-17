@@ -1,0 +1,6 @@
+type Query {
+  # 查询所有用户
+  users(first: Int, after: Cursor, last: Int, before: Cursor, skip: Int): UserConnection
+  # 通过id查询用户
+  user(id: ID): User
+}

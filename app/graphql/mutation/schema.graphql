@@ -1,0 +1,5 @@
+type Mutation {
+    # user
+    createUser(name: String!, articleId: ID!): User
+    delUser(id: ID!): ID
+}
