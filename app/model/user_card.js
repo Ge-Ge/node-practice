@@ -1,7 +1,7 @@
 'use strict';
 module.exports = app => {
   const { STRING, INTEGER } = app.Sequelize;
-  const UserInfo = app.model.define('user_card', {
+  const UserCard = app.model.define('user_card', {
     user_id: { type: INTEGER, references: {
       model: 'user',
       key: 'id',
@@ -12,5 +12,5 @@ module.exports = app => {
     comment: '用户银行卡表',
   });
 
-  return UserInfo;
+  return UserCard;
 };

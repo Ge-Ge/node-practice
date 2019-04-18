@@ -14,8 +14,9 @@ module.exports = appInfo => {
     dialect: 'mysql',
     hostname: '127.0.0.1',
     port: 3306,
+    username: 'root',
     password: '123456',
-    database: 'temp',
+    database: 'practice',
     define: {
       freezeTableName: true,
       underscored: true,

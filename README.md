@@ -1,4 +1,4 @@
-# shop
+# node-practice
 
 ## Development
 
@@ -25,10 +25,10 @@ NODE_ENV=test npx sequelize db:migrate:down:all
 npm run ci
 ```
 
-## Documents
+## 参考资料
 
-[eggjs sequelize document](https://eggjs.org/zh-cn/tutorials/mysql.html)
-[egg-sequelize](https://github.com/eggjs/egg-sequelize)
-[sequelize](http://docs.sequelizejs.com)
-[sequelize-cli and migrations](http://docs.sequelizejs.com/manual/tutorial/migrations.html)
-[factory-girl](https://github.com/aexmachina/factory-girl)
+[eggjs sequelize document](https://eggjs.org/zh-cn/tutorials/mysql.html)  
+[egg-sequelize](https://github.com/eggjs/egg-sequelize)  
+[sequelize](http://docs.sequelizejs.com)  
+[sequelize-cli and migrations](http://docs.sequelizejs.com/manual/tutorial/migrations.html)  
+[factory-girl](https://github.com/aexmachina/factory-girl)  

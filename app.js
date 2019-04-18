@@ -3,7 +3,7 @@
 module.exports = app => {
   app.beforeStart(async () => {
     if (app.config.env === 'local') {
-      await app.model.sync({ force: true });
+      await app.model.sync({ force: false });
     }
   });
 };
