@@ -1,28 +1,14 @@
 # node-practice
-
+> 后端项目，基于egg.js。
 ## Development
 
 ```bash
-# install dependencies
+# 安装依赖
 npm install
-# start
+# 创建数据库
+npx sequelize db:create
+# 启动
 npm run dev
-
-# generate migration file
-npx sequelize migration:generate
-# migrate up
-npx sequelize db:migrate
-# migrate up for test database
-NODE_ENV=test npx sequelize db:migrate
-# migrate down
-npx sequelize db:migrate:down
-npx sequelize db:migrate:down:all
-# migrate down for test database
-NODE_ENV=test npx sequelize db:migrate:down
-NODE_ENV=test npx sequelize db:migrate:down:all
-
-# run migration and test, for CI environment
-npm run ci
 ```
 
 ## 参考资料

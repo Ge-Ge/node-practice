@@ -1,7 +1,0 @@
-
-type PageInfo {
-  endCursor: Cursor
-  hasNextPage: Boolean!
-  hasPreviousPage: Boolean!
-  startCursor: Cursor
-}
