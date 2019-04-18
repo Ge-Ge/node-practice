@@ -1,5 +1,5 @@
 'use strict';
-class TagConnector {
+class UserConnector {
   constructor(ctx) {
     this.ctx = ctx;
   }
@@ -42,4 +42,4 @@ class TagConnector {
     return this.ctx.service.user.delUser(id);
   }
 }
-module.exports = TagConnector;
+module.exports = UserConnector;
