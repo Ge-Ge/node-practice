@@ -1,0 +1,27 @@
+version: "3"
+services:
+  node-practice:
+    build: .
+    environment:
+      # 应用 环境变量
+      - NODE_ENV=production
+      - EGG_SERVER_ENV=prod
+      - PORT=7100
+      # mysql 环境变量，本机ip：host.docker.internal
+      - EGG_MYSQL_HOST=host.docker.internal
+      - EGG_MYSQL_PORT=3306
+      - EGG_MYSQL_USERNAME=root
+      - EGG_MYSQL_PASSWORD=123456
+      # redis 环境变量
+      - EGG_REDIS_HOST=host.docker.internal
+      - EGG_REDIS_PORT=6379
+      - EGG_REDIS_PASSWORD=
+      - EGG_REDIS_DB=0
+    ports:
+      - "7100:7100"
+    networks:
+      - default
+      - practice_network
+networks:
+  practice_network:
+    driver: bridge

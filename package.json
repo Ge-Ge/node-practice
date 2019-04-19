@@ -24,6 +24,8 @@
     "node": ">=8.0.0"
   },
   "scripts": {
+    "docker": "egg-scripts start --title=node-practice",
+    "start": "egg-scripts start --title=node-practice",
     "dev": "egg-bin dev",
     "autod": "autod",
     "lint": "eslint .",
