@@ -15,7 +15,7 @@ module.exports = appInfo => {
     host: process.env.EGG_MYSQL_HOST || '127.0.0.1',
     port: process.env.EGG_MYSQL_PORT || '3306',
     username: process.env.EGG_MYSQL_USERNAME || 'root',
-    password: process.env.EGG_MYSQL_PASSWORD || '123456',
+    password: process.env.EGG_MYSQL_PASSWORD || '',
     database: 'practice',
     define: {
       freezeTableName: true,
