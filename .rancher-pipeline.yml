@@ -5,10 +5,12 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: lupin34/node-practice:latest
+      pushRemote: true
+      registry: 127.0.0.1:34881
 - name: 启动
   steps:
   - applyAppConfig:
-      catalogTemplate: upin34/node-practice:latest
+      catalogTemplate: lupin34/node-practice:latest
       version: v1
       name: node-practice
       targetNamespace: default
