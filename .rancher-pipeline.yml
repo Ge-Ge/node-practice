@@ -1,18 +1,15 @@
 stages:
 - name: Build
   steps:
+  - runScriptConfig:
+      image: node:latest
+      shellScript: npm run install
+- name: Publish
+  steps:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: lupin34/node-practice:latest
-      pushRemote: true
+      tag: node-practice
       registry: 127.0.0.1:34881
-- name: 启动
-  steps:
-  - applyAppConfig:
-      catalogTemplate: lupin34/node-practice:latest
-      version: v1
-      name: node-practice
-      targetNamespace: default
 timeout: 60
 notification: {}
